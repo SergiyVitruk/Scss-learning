@@ -131,3 +131,59 @@ meter {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.page {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
+  gap: 50px;
+  min-height: 100vh;
+  font-family: sans-serif;
+  background-color: #292932;
+}
+
+.page-title {
+  font-size: 96px;
+  font-weight: 600;
+  color: #fafafb;
+}
+
+.badge {
+  display: inline-block;
+  min-width: 96px;
+  padding: 4px 8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.07px;
+  text-align: center;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+.badge-completed {
+  background-color: #a461d8;
+}
+
+.badge-ended {
+  background-color: #fc5a5a;
+}
+
+.badge-active {
+  background-color: #82c43c;
+}
