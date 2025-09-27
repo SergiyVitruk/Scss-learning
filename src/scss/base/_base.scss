@@ -1,18 +1,21 @@
-.page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
+@use "../utils/placeholders";
+@use "../utils/variables" as var;
+@use "../utils/functions" as fn;
 
-  min-height: 100vh;
+body {
+  @extend %main-text;
 
-  font-family: sans-serif;
-  background-color: #292932;
+  font-family: var.$main-font, sans-serif;
+  color: fn.get-color("light-secondary");
+  background-color: fn.get-color("dark-primary");
 }
 
-.page-title {
-  font-size: 96px;
-  font-weight: 600;
-  color: #fafafb;
+button {
+  font-family: inherit;
+  color: fn.get-color("current");
+  cursor: pointer;
+}
+
+summary {
+  list-style-type: none;
 }
